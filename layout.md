@@ -22,7 +22,62 @@ Layout的家族統稱稱為ViewGroup
 *   RelativeLayout
 *   FrameLayout
 *   LinearLayout
+
      xmlns:android="http://schemas.android.com/apk/res/android"   
 這句話絕對不能省略，放在最外層的那控制項即可
+    
+    android:orientation="vertical"   就是排列方向為垂直(由上而下)
 
- 
+    android:orientation="horizontal"   就是排列方向為水平(由左而右)
+###RelativeLayout
+他沒有android:orientation可以用，因為他是用控制項的相對位置去編排的
+
+邊框位置
+
+先有一個控制項位置做絕對位置，才能做相對位置的判定嘛
+
+以word的文字編排方式可以很直覺的理解
+
+    android:layout_alignParentLeft  靠左對齊，(吸附邊框左邊)
+
+    android:layout_alignParentTop   靠上對齊，(吸附邊框上方)
+
+    android:layout_alignParentRight   靠右對齊，(吸附邊框右邊)
+
+    android:layout_alignParentBottom   靠下對齊，(吸附邊框下方)
+
+    android:layout_centerInParent    置中，(計算放在正中間)
+
+這類型就是以RelativeLayout的邊框做位置，做對齊
+而另一種就是以別人的控制項位置做為自己的控制項位置
+
+    android:layout_toLeftOf       這在(等下要寫的控制項的名)的左邊
+    
+    android:layout_toRightOf    這在(等下要寫的控制項的名)的右邊
+   
+    android:layout_below        這在(等下要寫的控制項名)的下面
+    
+    android:layout_above       這在(等下要寫的控制項名)的上面
+###FrameLayout
+ FrameLayout可以想成是RelativeLayout的功能閹割版
+ 只剩下對齊View的框邊的功能
+##ID
+所有的View和ViewGroup都可能需要android:id這東西
+
+他會在Compile專案時會產生一個R檔，就是gen/你的package名稱/R.java
+
+這個R檔會包含你的所有Layout上的所有id和string.xml上的名稱....等等內容，沒事別去動他
+
+寫法如下
+
+    android:id="@+id/tv01"
+
+這裡的@就是叫程式去R檔裡面找到代稱叫做tv01的id名稱
+
+這裡的+號不能省略，代表的是我需要在R檔裡新增一個id名稱叫做
+
+這個所有的Layout檔都適用，不同Layout裡的控制項id最好是要不一樣
+
+在一個Layout檔中，控制項的id一定要不同
+
+到時候程式可以用findViewById去依照這個id抓取其控制項
