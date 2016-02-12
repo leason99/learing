@@ -1,4 +1,14 @@
 # layout設置
+
+ [Manifest.xml:xmlns](https://sites.google.com/site/givemepassxd999/android/fen-ximanifest-xml)
+   
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns是xml namespace的縮寫,代表著宣告用android:這個變數為"http://schemas.android.com/apk/res/android"這串網址,
+    這樣的就可以直接使用網址內那個檔案所提供的屬性。
+    
+    
+  [TOOLS屬性](http://www.xlgps.com/article/48068.html)
+
 手機螢幕部分只要眼睛看的見的幾乎都是控制項，叫做View
 有以下屬性
 
