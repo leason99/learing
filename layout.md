@@ -17,14 +17,16 @@
     "wrap_content" 就是指依照你內容有多少就給你多少(寬度或是高度)
 
 ##layout
-Layout的家族統稱稱為ViewGroup
-*   AbsoluteLayout
-*   RelativeLayout
-*   FrameLayout
-*   LinearLayout
+  Layout的家族統稱稱為ViewGroup
+  *   AbsoluteLayout
+  *   RelativeLayout
+  *   FrameLayout
+  *   LinearLayout
 
-     xmlns:android="http://schemas.android.com/apk/res/android"   
-這句話絕對不能省略，放在最外層的那控制項即可
+ > xmlns:android="http://schemas.android.com/apk/res/android"
+ 
+   這句話絕對不能省略，放在最外層的那控制項即可
+    
     
     android:orientation="vertical"   就是排列方向為垂直(由上而下)
 
