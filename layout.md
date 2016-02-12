@@ -17,7 +17,12 @@
     "wrap_content" 就是指依照你內容有多少就給你多少(寬度或是高度)
 
 ##layout
-    > xmlns:android="http://schemas.android.com/apk/res/android"   
+Layout的家族統稱稱為ViewGroup
+*   AbsoluteLayout
+*   RelativeLayout
+*   FrameLayout
+*   LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"   
 這句話絕對不能省略，放在最外層的那控制項即可
 
  
