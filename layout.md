@@ -1,13 +1,19 @@
 # layout設置
 
  [Manifest.xml:xmlns](https://sites.google.com/site/givemepassxd999/android/fen-ximanifest-xml)
+  
+   mlns:android="http://schemas.android.com/apk/res/android"
+   xmlns是xml namespace的縮寫,代表著宣告用android:這個變數為"http://schemas.android.com/apk/res/android"這串網址,
+   這樣的就可以直接使用網址內那個檔案所提供的屬性。
+  
+ [TOOLS屬性](http://www.xlgps.com/article/48068.html)
+  
+   Tools: context
    
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns是xml namespace的縮寫,代表著宣告用android:這個變數為"http://schemas.android.com/apk/res/android"這串網址,
-    這樣的就可以直接使用網址內那個檔案所提供的屬性。
-    
-    
-  [TOOLS屬性](http://www.xlgps.com/article/48068.html)
+   這個屬性基本上是設定在 Activity 的 Layout XML 的根元素 (root element) 上
+   記錄該 Layout 所屬的 Activity/Activities (一個 Layouy可以被多個 Activity 重複使用)
+   藉由記錄該 Layout 所屬的 Activity 這個動作，Android Studio 便能夠取得該 Activity 的佈景主題 
+   (theme，每個 Activity 可以有自己所要套用的 theme)，並且在 Preview 視窗中顯示套用套用該主題後的預覽畫面。
 
 手機螢幕部分只要眼睛看的見的幾乎都是控制項，叫做View
 有以下屬性
