@@ -5,8 +5,8 @@ apt-get install asterisk
 設定帳戶(sip.conf)
 
   Vi  /etc/asterisk/sip.conf
-
->>[general]
+```
+[general]
 context=public
 [1001]
 type=friend
@@ -23,4 +23,4 @@ context=my
 host=dynamic
 nat=yes
 accept_outofcall_message=yes
-outofcall_message_context=sms
+outofcall_message_context=sms```
