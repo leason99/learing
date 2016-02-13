@@ -4,7 +4,7 @@ apt-get install asterisk
 
 設定帳戶(sip.conf)
 
-  Vi  /etc/asterisk/sip.conf]
+  Vi  /etc/asterisk/sip.conf
   
 ```
 [general]
@@ -58,3 +58,10 @@ exten => _.,n,MessageSend(${ACTUALFROM},ServiceCenter)
 exten => _.,n,Hangup()
 exten => _.,n,Hangup()
 ```
+
+    說明：
+     _：代表開頭
+      X：代表0-9
+     .：代表任意長度的字元
+      _X.：指電話號碼是以數字開始不管任何長度
+
