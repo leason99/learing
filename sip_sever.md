@@ -6,7 +6,7 @@ apt-get install asterisk
 
   Vi  /etc/asterisk/sip.conf
 
->[general]
+>>[general]
 context=public
 [1001]
 type=friend
