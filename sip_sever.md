@@ -1,8 +1,8 @@
-###Sip server install
+#Sip server install
 
-apt-get install asterisk
+  '#apt-get install asterisk'
 
-設定帳戶(sip.conf)
+###設定帳戶(sip.conf)
 
   Vi  /etc/asterisk/sip.conf
   
@@ -52,7 +52,8 @@ outofcall_message_context=sms
 [參考連結 sip.conf & extensions.conf](http://blog.roodo.com/garywu0111/archives/cat_478625.html)
 
 
-設定動作(extensions.conf)
+#設定動作(extensions.conf)
+
    Vi  /etc/asterisk/sip.conf
 
 ```
