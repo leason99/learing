@@ -23,8 +23,8 @@
     adb push pictures /sdcard (複製 picture 照片目錄到 /sdcard 目錄下)
     adb push mp3 /sdcard (複製 mp3 音樂目錄到 /sdcard 目錄下)
     adb shell (Android 模擬器啟動命令列模式)
-    \#cd /sdcard (進入 /sdcard 目錄)
-    \#ls (查看 SD 記憶卡中的檔案)
+    #cd /sdcard (進入 /sdcard 目錄)
+    #ls (查看 SD 記憶卡中的檔案)
 
 # 使用 adb+pull 從 SD 記憶卡下載檔案
 
@@ -34,9 +34,9 @@
 # 刪除 SD 卡裡面的檔案
 
     adb shell
-    \#ced /sdcard
-    \#rm 001.jpg (刪除 SD 記憶卡裡的檔案)
-    \#rm -r * (刪除 SD 記憶卡裡所有檔案與目錄)
+    #ced /sdcard
+    #rm 001.jpg (刪除 SD 記憶卡裡的檔案)
+    #rm -r * (刪除 SD 記憶卡裡所有檔案與目錄)
 
 # Android模擬器影片播放方法
 
