@@ -16,6 +16,13 @@
     (theme，每個 Activity 可以有自己所要套用的 theme)，並且在 Preview 視窗中顯示套用套用該主題後的預覽畫面。
     
  [stytle,theme](http://xnfood.com.tw/style-theme/#declare_02)
+ 
+> 我們在布局的同時，通常會順便加入其元件長寬、字體大小以及字體顏色…等屬性，一般來說直接設定每個元件的屬性即可，但若當同樣屬性設定的介    面元件一直重複出現的時候，我們就可以利用自訂 Style 與 Theme 的方式，簡化重複性的布局，進而加快我們撰寫程式的速度。
+> 
+>《Style 與 Theme 的差別》
+> Style 與 Theme 其實是兩個很相像的東西，都是一種可以套用的格式定義，唯一的差別在於，Theme 的對象是針對 Application 與 Activity      設定整個程式的外觀，而 Style 的對象則是設定布局介面元件的屬性。
+
+
  [button style](http://ithelp.ithome.com.tw/question/10156770)
  [textsize,單位,像素](https://magiclen.org/android-screen/)
  
