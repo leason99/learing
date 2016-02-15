@@ -106,3 +106,5 @@ SP常用來當作文字的長度，基本上SP就是DP(在字型大小100%的時
 
 到時候程式可以用findViewById去依照這個id抓取其控制項
 [findviewbyid](http://www.2cto.com/kf/201204/127405.html)
+
+>(呼叫 findViewByID() 方法，即可在執行時期「動態取得 View 物件」)
