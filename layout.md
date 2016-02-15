@@ -1,5 +1,5 @@
 # layout設置
-
+[資料](https://chris930921.gitbooks.io/android-traveling-gitbook/content/xml/userfult_framework.html)
  [Manifest.xml:xmlns](https://sites.google.com/site/givemepassxd999/android/fen-ximanifest-xml)
   
     mlns:android="http://schemas.android.com/apk/res/android"
