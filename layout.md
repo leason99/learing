@@ -105,3 +105,4 @@ SP常用來當作文字的長度，基本上SP就是DP(在字型大小100%的時
 在一個Layout檔中，控制項的id一定要不同
 
 到時候程式可以用findViewById去依照這個id抓取其控制項
+[findviewbyid](http://www.2cto.com/kf/201204/127405.html)
