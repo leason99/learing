@@ -18,7 +18,7 @@
  
 ##Set
  
-###setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //退出方式
+*setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);* //退出方式
   
   + DO_NOTHING_ON_CLOSE：不執行任何操作
   + HIDE_ON_CLOSE：自動隱藏該表單。
@@ -28,20 +28,20 @@
         
         
         
-###setTitle(Title); //標題名稱
+*setTitle(Title);* //標題名稱
         
-###ImageIcon ico = new ImageIcon(image); //圖標創建("當前程式目錄下儲存圖片的檔案名/圖片名.gif或.jpg")//"image/Title.gif"
+*ImageIcon ico = new ImageIcon(image);* //圖標創建("當前程式目錄下儲存圖片的檔案名/圖片名.gif或.jpg")//"image/Title.gif"
         
-###setIconImage(ico.getImage()); //圖標設定
+*setIconImage(ico.getImage());* //圖標設定
         
-###setSize(SizeX, SizeY); //設定視窗大小
+*setSize(SizeX, SizeY);* //設定視窗大小
         
-###setLocationRelativeTo(this); //設定視窗初始位置在螢幕中心
+*setLocationRelativeTo(this);* //設定視窗初始位置在螢幕中心
         
-###setResizable(true); //設定視窗大小可變
+*setResizable(true);* //設定視窗大小可變
         
-###setExtendedState(JFrame.MAXIMIZED_BOTH); //設定最大化顯示
+*setExtendedState(JFrame.MAXIMIZED_BOTH);* //設定最大化顯示
         
-###setVisible(true); //設定視窗可見
+*setVisible(true);* //設定視窗可見
 -------------------
-myframe.disposed(); /釋放該表單
+*myframe.disposed();* /釋放該表單
