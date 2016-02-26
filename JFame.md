@@ -12,17 +12,18 @@
           //inition something here
        
        }
-       
-       
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //退出方式
-              /*
-              DO_NOTHING_ON_CLOSE：不執行任何操作
-
-            * HIDE_ON_CLOSE：自動隱藏該表單。
-            
-            * DISPOSE_ON_CLOSE：自動隱藏並釋放該表單
-            
-            * EXIT_ON_CLOSE：使用 System exit 方法退出應用程式。僅在應用程式中使用。
+       //own method
+       }
+```
+ 
+##Set
+ 
+#setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //退出方式
+  
+  + DO_NOTHING_ON_CLOSE：不執行任何操作
+  + HIDE_ON_CLOSE：自動隱藏該表單。
+  + DISPOSE_ON_CLOSE：自動隱藏並釋放該表單
+  + EXIT_ON_CLOSE：使用 System exit 方法退出應用程式。僅在應用程式中使用。
             
             預設情況下，該值被設置為 HIDE_ON_CLOSE。*/
         
