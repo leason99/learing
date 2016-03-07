@@ -104,9 +104,9 @@ copy from: https://github.com/smallmuou/Blogs/blob/master/blogs/asterisk%E5%9C%A
 * define RONLY 0x1
 
 
-Q:process_sdp: ignoring 'video' media offer because port number is zero
+> *Q:process_sdp: ignoring 'video' media offer because port number is zero*
 
-**A:说明视频编码不支持，core show codecs video查看支持的视频编码（linphone默认只支持vp8）
+> A:说明视频编码不支持，core show codecs video查看支持的视频编码（linphone默认只支持vp8）*
 
 ## NAT类型
 [NAT分类](http://blog.163.com/hlz_2599/blog/static/1423784742012317102533915/)
