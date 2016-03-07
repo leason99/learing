@@ -95,9 +95,9 @@ exten => _.,n,Hangup()
       _X.：指電話號碼是以數字開始不管任何長度
 
 ------------------------------------
-copy from: https://github.com/smallmuou/Blogs/blob/master/blogs/asterisk%E5%9C%A8macosx%E4%B8%8B%E7%BC%96%E8%AF%91.md
-# Asterisk 技术点
 
+# Asterisk 技术点
+[from]( https://github.com/smallmuou/Blogs/blob/master/blogs/asterisk%E5%9C%A8macosx%E4%B8%8B%E7%BC%96%E8%AF%91.md)
 > *Q:process_sdp: ignoring 'video' media offer because port number is zero*
 > A:说明视频编码不支持，core show codecs video查看支持的视频编码（linphone默认只支持vp8）*
 
