@@ -97,21 +97,9 @@ exten => _.,n,Hangup()
 ------------------------------------
 copy from: https://github.com/smallmuou/Blogs/blob/master/blogs/asterisk%E5%9C%A8macosx%E4%B8%8B%E7%BC%96%E8%AF%91.md
 # Asterisk 技术点
-2014-11-07
-
-* brew install apple-gcc-4.2
-* ./configure CC=gcc-4.2
-* define RONLY 0x1
-
 
 > *Q:process_sdp: ignoring 'video' media offer because port number is zero*
-
 > A:说明视频编码不支持，core show codecs video查看支持的视频编码（linphone默认只支持vp8）*
-
-## NAT类型
-[NAT分类](http://blog.163.com/hlz_2599/blog/static/1423784742012317102533915/)
-
-
 
 ## SIP.conf
 * autocreatepeer=yes 允许自动创建节点
