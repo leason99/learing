@@ -50,7 +50,7 @@ outofcall_message_context=sms
 + context 定義用戶電話的權限，以及如何處理該號碼的撥入撥出，sip.conf中設定的context名稱與extensions.conf中互相對應。
     
 [參考連結 sip.conf & extensions.conf](http://blog.roodo.com/garywu0111/archives/cat_478625.html)
-
+[sip.conf for linphone about qualify](http://www.voip-info.org/wiki/view/Asterisk+phone+linphone)
 
 ###設定動作(extensions.conf)
 
