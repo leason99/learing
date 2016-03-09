@@ -38,7 +38,7 @@ make:
  libsndfile-dev
 
  
->>+---------- FreeSWITCH install Complete ----------+
+```+---------- FreeSWITCH install Complete ----------+
  + FreeSWITCH has been successfully installed.     +
  +                                                 +
  +       Install sounds:                           +
@@ -93,5 +93,5 @@ make:
  +       ----------------------------------        +
  +       https://www.cluecon.com                   +
  +                                                 +
- +-------------------------------------------------+
+ +-------------------------------------------------+```
 
