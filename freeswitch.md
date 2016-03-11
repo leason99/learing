@@ -37,61 +37,22 @@ make:
  
  libsndfile-dev
 
- 
-```+---------- FreeSWITCH install Complete ----------+
- + FreeSWITCH has been successfully installed.     +
- +                                                 +
- +       Install sounds:                           +
- +       (uhd-sounds includes hd-sounds, sounds)   +
- +       (hd-sounds includes sounds)               +
- +       ------------------------------------      +
- +                make cd-sounds-install           +
- +                make cd-moh-install              +
- +                                                 +
- +                make uhd-sounds-install          +
- +                make uhd-moh-install             +
- +                                                 +
- +                make hd-sounds-install           +
- +                make hd-moh-install              +
- +                                                 +
- +                make sounds-install              +
- +                make moh-install                 +
- +                                                 +
- +       Install non english sounds:               +
- +       replace XX with language                  +
- +       (ru : Russian)                            +
- +       (fr : French)                             +
- +       ------------------------------------      +
- +                make cd-sounds-XX-install        +
- +                make uhd-sounds-XX-install       +
- +                make hd-sounds-XX-install        +
- +                make sounds-XX-install           +
- +                                                 +
- +       Upgrade to latest:                        +
- +       ----------------------------------        +
- +                make current                     +
- +                                                 +
- +       Rebuild all:                              +
- +       ----------------------------------        +
- +                make sure                        +
- +                                                 +
- +       Install/Re-install default config:        +
- +       ----------------------------------        +
- +                make samples                     +
- +                                                 +
- +                                                 +
- +       Additional resources:                     +
- +       ----------------------------------        +
- +       https://www.freeswitch.org                +
- +       https://freeswitch.org/confluence         +
- +       https://freeswitch.org/jira               +
- +       http://lists.freeswitch.org               +
- +                                                 +
- +       irc.freenode.net / #freeswitch            +
- +                                                 +
- +       Register For ClueCon:                     +
- +       ----------------------------------        +
- +       https://www.cluecon.com                   +
- +                                                 +
- +-------------------------------------------------+```
+------
+
+撥號計劃使用perl的正則表達式。
+
+常用的匹配模式如下：
+
+  ^ 表示開始匹配，^123 表示匹配123開頭
+  $表示結束匹配
+  456$表示匹配456結束
+  | 表示或者，匹配任何一個
+  [] 表示匹配其中的任意一個字符
+  [0-9] 等於匹配[0123456789]
+  \d等於匹配[0-9]
+\d+ 等於匹配1 個或多個數字
+\d* 等於匹配0 個或多個前面的字符
+
+
+
 
