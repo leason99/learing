@@ -56,3 +56,5 @@ make:
 
 
 
+http://fanli7.net/a/bianchengyuyan/C__/20120813/203874.html
+http://wenku.baidu.com/view/fde3e68cbceb19e8b8f6ba45.html
