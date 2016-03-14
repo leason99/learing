@@ -65,7 +65,7 @@ freeswitch支持 大部分高清语音编码，包括Speex,G.722,G.722.1(Siren) 
 2.有些语音编码以模块方式加载(G729等)，有的则属于freeswitch core部分(G711)，系统默认不加载所有语音编码，对于没有加载的编码，可以通过配置
 modules.conf.xml配置，在fs_cli上 执行 "show codec" 会显示当前系统已经加载的编码：
 
-type,name,ikey
+>>type,name,ikey
 codec,ADPCM (IMA),mod_spandsp
 codec,AMR,mod_amr
 codec,G.711 alaw,CORE_PCM_MODULE
@@ -98,21 +98,21 @@ codec,iLBC,mod_ilbc
 3. 设置编码的优先级
 vars.xml可以设置系统默认使用的编码，为全局设置，下面两个变量，一个表示呼入，一个表示呼出。
 
- <X-PRE-PROCESS cmd="set" data="global_codec_prefs=G722,PCMA,PCMU,GSM"/>
+>> <X-PRE-PROCESS cmd="set" data="global_codec_prefs=G722,PCMA,PCMU,GSM"/>
 <X-PRE-PROCESS cmd="set" data="outbound_codec_prefs=G722,PCMA,PCMU,GSM"/>
 
-同时，不同的协议类型（SIP，和H323等）可以设置自己的编码优先级，比如采用SIP协议时，可以在
+>>同时，不同的协议类型（SIP，和H323等）可以设置自己的编码优先级，比如采用SIP协议时，可以在
 
-sofia.conf.xml
+>>sofia.conf.xml
 
- <settings>
+>> <settings>
  <param name="inbound-codec-prefs" value="$${global_codec_prefs}"/>
  <param name="outbound-codec-prefs" value="$${global_codec_prefs}"/>
 </settings>
 
-这里，SIP协议类型继承了vars.xml的全局设置（呼入，呼出）。
+>>这里，SIP协议类型继承了vars.xml的全局设置（呼入，呼出）。
 
-4. 对编解码转换的支持
+>>4. 对编解码转换的支持
 (1)作为B2BUA，freeswitch支持大部分音频编码的转换，但无视频编码转换功能。
 (2)对于语音编码 G721 / G728 / G719 / AMR，只支持转发，不支持转换。
 (3)freeswitch支持的视频编码 （只转发）
@@ -127,22 +127,22 @@ Provided by mod_theora.
 MP4 Video passthrough.
 Provided by mod_mp4v.
 
-(4)媒体代理
+>>(4)媒体代理
 freeswitch对媒体的处理有三种方式：
 
-a.默认方式:媒体通过freeswitch,
+>>a.默认方式:媒体通过freeswitch,
 RTP被freeswtich转发，
 freeswitch控制编码的协商并在协商不一致时提供语音编码转换能力，
 支持录音，二次拨号等。
 
-b.代理模式: 媒体通过freeswitch转发，但是不处理媒体
+>>b.代理模式: 媒体通过freeswitch转发，但是不处理媒体
    RTP通过freewtich转发(只改动sdp c= ip)
    freeswtich不控制 sdp参数，只是转发。
    通话的终端必须有一致的语音或者视频编码，因为freeswitch此时不支持转码（适合视频编码）
    不支持录音， 二次拨号等功能
-c.不转发也不处理媒体
+>>c.不转发也不处理媒体
 此模式下freeswitch更像是一个信令proxy,媒体不会通过freeswitch,sdp消息体也不做修改，没有录音，二次拨号等功能。
 
-三种方式在不同应用场景下各有优点，对于a,也是默认方式，更适合呼叫中心等富功能应用，但性能相比其他两个也是最差的，对于b，更适合处理nat问题，
+>>三种方式在不同应用场景下各有优点，对于a,也是默认方式，更适合呼叫中心等富功能应用，但性能相比其他两个也是最差的，对于b，更适合处理nat问题，
 可以考虑用这种模式做一个session border controlor,也适合于外部MCU配合做为视频会议,性能也明显好于a,对于 c，更像是一个信令代理，性能最高，但提供的功能有限。
 
