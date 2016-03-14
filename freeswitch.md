@@ -37,6 +37,8 @@ make:
  
  libsndfile-dev
 
+
+[for enable video call]( https://support.cafex.com/hc/en-us/articles/202111641-FCSDK-FreeSwitch-interop-guide)
 ------
 
 撥號計劃使用perl的正則表達式。
