@@ -16,7 +16,7 @@ FragmentViewPagerAdapter adapter = new FragmentViewPagerAdapter(this.getFragment
                       }
               });
 ------
-``
+```
 public class FragmentViewPagerAdapter extends PagerAdapter implements ViewPager.OnPageChangeListener {
     private List<Fragment> fragments; // 每个Fragment对应一个Page
     private FragmentManager fragmentManager;
@@ -138,4 +138,4 @@ public class FragmentViewPagerAdapter extends PagerAdapter implements ViewPager.
 
 
 }
-`
+```
