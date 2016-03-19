@@ -4,9 +4,10 @@
 public List<Fragment> fragments;
 
 ------
+```
 viewPager = (ViewPager) findViewById(R.id.view);
- fragments = new ArrayList<Fragment>();
- fragments.add(new ChatListFragment());  //加入一個任意想要的Fragment (實體)
+fragments = new ArrayList<Fragment>();
+fragments.add(new ChatListFragment());  //加入一個任意想要的Fragment (實體)
 FragmentViewPagerAdapter adapter = new FragmentViewPagerAdapter(this.getFragmentManager(), viewPager, fragments);
        
         adapter.setOnExtraPageChangeListener(new FragmentViewPagerAdapter.OnExtraPageChangeListener(){
@@ -15,6 +16,7 @@ FragmentViewPagerAdapter adapter = new FragmentViewPagerAdapter(this.getFragment
                           System.out.println("Extra...i: " + i);
                       }
               });
+              ```
 ------
 ```
 public class FragmentViewPagerAdapter extends PagerAdapter implements ViewPager.OnPageChangeListener {
