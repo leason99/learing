@@ -78,3 +78,4 @@ public class MyDialogFragment extends DialogFragment {
         df.dismiss();
     }
 ```
+>过默认对话框有个讨厌的标题，我们怎么去掉呢：可以在onCreateView中调用getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);即可去掉
