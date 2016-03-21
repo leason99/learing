@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
     }
 }
 ```
-#*dialogfragment*
+###*dialogfragment*
 ```
 MyDialogFragment mdf = new MyDialogFragment();
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -69,4 +69,12 @@ public class MyDialogFragment extends DialogFragment {
         return v;
     }
 }
+```
+###*移除 dialogfragment* 
+```
+ Fragment prev = getSupportFragmentManager().findFragmentByTag("fragment_dialog");
+    if (prev != null) {
+        DialogFragment df = (DialogFragment) prev;
+        df.dismiss();
+    }
 ```
